@@ -1,0 +1,20 @@
+BoxLayout:
+    orientation: 'vertical'
+    BoxLayout:
+        orientation: 'horizontal'
+        TextInput:
+            id: input_number
+            text: '1'
+        BoxLayout:
+            orientation: 'vertical'
+            Button:
+                text: 'UP'
+                on_press: handle_input_number(+1)
+            Button:
+                text: 'DOWN'
+                on_press: handle_input_number(-1)
+    Button:
+        text: 'Convert Miles to Kilometres'
+    Label:
+        id: output_label
+
